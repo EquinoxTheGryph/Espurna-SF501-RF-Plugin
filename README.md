@@ -1,5 +1,8 @@
 # Espurna-SF501-RF-Plugin
-Adds support to drive extra SF-501 RF switches by Flamingo (Smartwares.eu) Via a single 433 MHZ Transmitter
+The purpose of this plugin is to add support for low-cost 1000w remote controlled relays commonly sold at *Action Nederland* to the Espurna Firmware for ESP8266 via a low cost 433 MHZ RF module.
+Do note that these relays are stateless, therefore they cannot report their state back to a reciever. 
+
+![Three SF501P Relays and the included remote](sf501p.jpg)
 
 
 
@@ -48,9 +51,18 @@ Adds support to drive extra SF-501 RF switches by Flamingo (Smartwares.eu) Via a
   ```
     #define RF_REMOTE_ID        12345   // This tells the plugin which remote id it's emulating (change to any chosen number)
     #define RF_OUTPUT_PIN       5       // This is the pin that controls the RF transmitter
-    #define RF_RELAY_START      1       // Select which BASE relay ID (add 1) will control the remote relays
-    #define RF_MAX_RELAYS       7       // Set the maximum amount of relays to read (add 1)
+    #define RF_RELAY_START      1       // Select which BASE relay ID (-1*) will control the remote relays
+    #define RF_MAX_RELAYS       7       // Set the maximum amount of relays to read (-1*)
   ```
 * To be able to load the plugin add this argument to your `build_flags` in `./code/platformio.ini` 
   * `-DUSE_CUSTOM_H` 
+
+## Pairing instructions
+#### To pair relays
+* Open the web interface
+* Make sure the desired Switch # is set to `OFF` (Set to `ON` if you want to unpair)
+* Plug in the relay (This will start it up into pair mode)
+* Turn the switch to `ON` on the GUI (Set to `OFF` if you want to unpair)
+
+
   
