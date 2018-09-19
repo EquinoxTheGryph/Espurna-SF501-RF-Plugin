@@ -2,17 +2,24 @@
 #ifdef _PLUGIN_SF501
 
 /*
-
 A Simple Way To Bind Virtual Relays To Send Commands To External Flamingo SF501 Relays Via RF 433MHZ19
 
 Plugin Copyright
-GPLv3
 
+This file is part of Espurna-SF501-RF-Plugin.
 
-TODO: Export as standalone plugin (to see changes in platio: click bottom right button)
-      uncomment platformio.ini ENVIRONMENTS
+    Espurna-SF501-RF-Plugin is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    Espurna-SF501-RF-Plugin is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
+    You should have received a copy of the GNU General Public License
+    along with Espurna-SF501-RF-Plugin.  If not, see <https://www.gnu.org/licenses/>.
 */
 
 
@@ -24,8 +31,7 @@ TODO: Export as standalone plugin (to see changes in platio: click bottom right 
 #include <ArduinoJson.h>
 #include <vector>
 #include <functional>
-
-#include <sf501-remote.h> //* The Magic Sauce
+#include <sf501-remote.h>
 
 //*---------------------------------------------------------------------------
 //* Default defines
