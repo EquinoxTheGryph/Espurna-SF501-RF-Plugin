@@ -1,9 +1,19 @@
-//* espurna custom header template file
-//* This is espurna custom header integration point
-//* All custom defines goes Here
-//* See plugin integration section on bottom of this file
-//* Template Version: 0.0.1
-//* files: /code/espurna/config/custom.h; code/espurna/plugin1.ino; /code/libplugin1/plugin1.h
+/*
+This file is part of Espurna-SF501-RF-Plugin.
+
+    Espurna-SF501-RF-Plugin is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Espurna-SF501-RF-Plugin is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Espurna-SF501-RF-Plugin.  If not, see <https://www.gnu.org/licenses/>.
+    */
 
 #define MANUFACTURER            "APHELION"
 #define DEVICE                  "CUSTOM"
