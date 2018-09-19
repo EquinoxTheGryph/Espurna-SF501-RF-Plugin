@@ -52,5 +52,5 @@ Adds support to drive extra SF-501 RF switches by Flamingo (Smartwares.eu) Via a
     #define RF_MAX_RELAYS       7       // Set the maximum amount of relays to read (add 1)
   ```
 * To be able to load the plugin add this argument to your `build_flags` in `./code/platformio.ini` 
-  `-DUSE_CUSTOM_H` 
+  * `-DUSE_CUSTOM_H` 
   
